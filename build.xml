@@ -44,7 +44,7 @@
         </java>
     </target>
 
-    <target name="test.integration" depends="jar">
+    <target name="test.integration">
 	<mkdir dir="${report.dir}"/>
         <junit printsummary="yes">
             <classpath>
@@ -60,7 +60,7 @@
         </junit>
     </target>
 
-    <target name="test.selenium" depends="jar">
+    <target name="test.selenium">
 	<mkdir dir="${report.dir}"/>
         <junit printsummary="yes">
             <classpath>
